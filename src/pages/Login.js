@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import { Box, Input, Button, Flex, Checkbox, Text } from "@chakra-ui/react";
+import { Box,Button, Flex, Checkbox, Text } from "@chakra-ui/react";
 import { ReactComponent as Lady } from "../assets/login-bg.svg";
-// import {ReactComponent as MainLogo} from '../assets/Logo.svg'
 import LogoMain from "../assets/Logo.png";
 import styled from "styled-components";
-import { LoginButton } from "../components/Button";
-
-// import { Logo } from '../components/Logo'
+import { FormButton } from "../components/Button";
+import InputField from "../components/Input";
 
 function Login() {
   return (
@@ -17,28 +14,9 @@ function Login() {
       <Logo>
         <LogoContent className="logo" src={LogoMain} alt="logo" />
       </Logo>
-
-      <Input
-        borderColor="rgba(112, 112, 112, 0.25)"
-        fontSize="2rem"
-        w="70%"
-        p="2%"
-        borderRadius="50px"
-        textAlign="center"
-        margin="20px auto"
-        placeholder="Username/Email"
-      />
-      <Input
-        borderColor="rgba(112, 112, 112, 0.25)"
-        fontSize="2rem"
-        w="70%"
-        p="2%"
-        borderRadius="50px"
-        textAlign="center"
-        margin="20px auto"
-        placeholder="password"
-      />
-      <LoginButton />
+      <InputField placeholder="Username/Email" />
+      <InputField placeholder="password" />
+      <FormButton data="Sign In" />
       <Flex display="flex" justifyContent="space-between">
         <Checkbox borderColor="blue" fontSize="1.5rem">
           Remember

@@ -3,23 +3,16 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import bg from "../assets/bg.svg";
 import { ReactComponent as Heading } from "../assets/heading-welcome.svg";
-// import Heading from '../assets/heading-welcome.svg'
 import LogoMain from "../assets/Logo.svg";
 import { ReactComponent as Arrow } from "../assets/arrow-back.svg";
-// import Buttons from '../components/Button'
 import { Button, Text } from "@chakra-ui/react";
 
 function Welcome() {
   return (
     <Wrapper>
-      {/* <Text>
-                YOUR HEALTH IS OUR PRIORITY
-            </Text> */}
       <Header>
         <Heading />
       </Header>
-
-      {/* <img my="10%" mx=" 5%" w="50%" src={Heading} alt="heading" /> */}
       <Logo>
         <LogoContent className="logo" src={LogoMain} alt="logo" />
       </Logo>
@@ -34,7 +27,7 @@ function Welcome() {
           w="30%"
           margin="auto 35%"
         >
-          <Text marginRight="10%" fontSize="1.3rem" fontWeight="700">
+          <Text marginRight="10%" fontSize="1.5rem" fontWeight="700">
             Lets Go
           </Text>
           <Arrow />
@@ -71,6 +64,6 @@ const Header = styled.div`
   width: 50%;
 `;
 const LogoContent = styled.img`
-  margin: 15%;
+  margin: auto 10%;
   width: 70%;
 `;

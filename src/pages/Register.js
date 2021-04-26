@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
-
-// import Logo from '../components/Logo'
-import { Box, Input, Button, Flex, Checkbox, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Checkbox, Text } from "@chakra-ui/react";
 import { InputButton, FormButton } from "../components/Button";
+import InputField from "../components/Input";
 
 function Register() {
   return (
@@ -17,67 +16,14 @@ function Register() {
         Create Profile
       </Text>
       <Box textAlign="center">
-        <Input
-          borderColor="rgba(112, 112, 112, 0.25)"
-          fontSize="2rem"
-          w="70%"
-          p="2%"
-          borderRadius="50px"
-          textAlign="center"
-          margin="10px auto"
-          placeholder="Firstname"
-        />
-        <Input
-          borderColor="rgba(112, 112, 112, 0.25)"
-          fontSize="2rem"
-          w="70%"
-          p="2%"
-          borderRadius="50px"
-          textAlign="center"
-          margin="10px auto"
-          placeholder="Lastname"
-        />
-        <Input
-          borderColor="rgba(112, 112, 112, 0.25)"
-          fontSize="2rem"
-          w="70%"
-          p="2%"
-          borderRadius="50px"
-          textAlign="center"
-          margin="10px auto"
-          placeholder="Phone Number"
-        />
-        <Input
-          borderColor="rgba(112, 112, 112, 0.25)"
-          fontSize="2rem"
-          w="70%"
-          p="2%"
-          borderRadius="50px"
-          textAlign="center"
-          margin="10px auto"
-          placeholder="Email"
-        />
-        <Input
-          borderColor="rgba(112, 112, 112, 0.25)"
-          fontSize="2rem"
-          w="70%"
-          p="2%"
-          borderRadius="50px"
-          textAlign="center"
-          margin="10px auto"
-          placeholder="password"
-        />
-        <Input
-          borderColor="rgba(112, 112, 112, 0.25)"
-          fontSize="2rem"
-          w="70%"
-          p="2%"
-          borderRadius="50px"
-          textAlign="center"
-          margin="10px auto"
-          placeholder="Confirm Password"
-        />
-        <FormButton />
+        <InputField placeholder="Firstname" />
+        <InputField placeholder="Lastname" />
+        <InputField placeholder="Phone Number" />
+        <InputField placeholder="Email" />
+        <InputField placeholder="password" />
+        <InputField placeholder="Confirm password" />
+
+        <FormButton data="Submit" />
 
         <Flex
           display="flex"
@@ -103,18 +49,3 @@ function Register() {
 }
 
 export default Register;
-// const Logo = styled.div`
-//   background-color: #fff;
-//   border-radius: 50%;
-//   border: 1px solid rgba(112, 112, 112, 0.25);
-//   padding: 5px;
-//   width: 40%;
-//   height: 35%;
-//   margin: 0% auto;
-//   padding: auto;
-//   margin-top: -25%;
-// `;
-// const LogoContent = styled.img`
-//   margin: 15%;
-//   width: 70%;
-// `;
