@@ -1,4 +1,5 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
@@ -7,8 +8,11 @@ import { InputButton, FormButton } from "../components/Button";
 import InputField from "../components/Input";
 
 function Register() {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
+
   return (
-    <Box w="500px" height="100vh" margin="5px auto">
+    <Box w="500px" height="100vh" margin="5px auto" onSubmit={handleSubmit(onSubmit)}>
       <Box textAlign="center">
         <Logo width="30%" />
       </Box>
@@ -16,14 +20,15 @@ function Register() {
         Create Profile
       </Text>
       <Box textAlign="center">
-        <InputField placeholder="Firstname" />
-        <InputField placeholder="Lastname" />
-        <InputField placeholder="Phone Number" />
-        <InputField placeholder="Email" />
-        <InputField placeholder="password" />
-        <InputField placeholder="Confirm password" />
+        <InputField placeholder="Firstname" register={register} required />
+        <InputField placeholder="Lastname" register={register} required />
+        <InputField placeholder="Phone Number" register={register} required/>
+        <InputField placeholder="Email" register={register} required/>
+        <InputField placeholder="designation" register={register} required/>
+        <InputField placeholder="password" register={register} required/>
+        <InputField placeholder="Confirm password" register={register} required/>
 
-        <FormButton data="Submit" />
+        <FormButton data="Submit" type="submit" />
 
         <Flex
           display="flex"

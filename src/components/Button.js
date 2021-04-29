@@ -1,4 +1,5 @@
-import React, { Children } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
 import { Button } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 function Buttons() {
@@ -9,6 +10,8 @@ FormButton.propTypes = {
 };
 
 export function FormButton(props) {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = data => console.log(data);
   // const data = "Go"
   return (
     <Button
@@ -19,9 +22,10 @@ export function FormButton(props) {
       p="2%"
       borderRadius="50px"
       textAlign="center"
-      margin="20px auto"
+      margin="5px auto"
       color="#fff"
       fontWeight="700"
+      type="submit"
     >
        {props.data}
     </Button>
