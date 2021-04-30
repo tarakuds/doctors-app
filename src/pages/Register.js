@@ -20,13 +20,13 @@ function Register() {
         Create Profile
       </Text>
       <Box textAlign="center">
-        <InputField placeholder="Firstname" register={register} required />
-        <InputField placeholder="Lastname" register={register} required />
+        <InputField placeholder="First Name" register={register} required />
+        <InputField placeholder="Last Name" register={register} required />
         <InputField placeholder="Phone Number" register={register} required/>
         <InputField placeholder="Email" register={register} required/>
-        <InputField placeholder="designation" register={register} required/>
-        <InputField placeholder="password" register={register} required/>
-        <InputField placeholder="Confirm password" register={register} required/>
+        <InputField placeholder="Designation" register={register} required/>
+        <InputField placeholder="Password" register={register} required/>
+        <InputField placeholder="Confirm Password" register={register} required/>
 
         <FormButton data="Submit" type="submit" />
 
