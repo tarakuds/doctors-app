@@ -12,7 +12,7 @@ function Register() {
   const onSubmit = data => console.log(data);
 
   return (
-    <Box minWidth="375px" maxWidth="500px" height="100%" margin="5px auto" onSubmit={handleSubmit(onSubmit)}>
+    <Box minWidth="375px" maxWidth="500px" height="100%" margin="5px auto" paddingBottom="3%" onSubmit={handleSubmit(onSubmit)}>
       <Box textAlign="center">
         <Logo width="30%" />
       </Box>
@@ -33,7 +33,7 @@ function Register() {
         <Flex
           display="flex"
           justifyContent="space-between"
-          width="80%"
+          width="85%"
           margin="auto"
         >
           <Text fontSize="1.5rem" color="rgb(112, 112, 112)">

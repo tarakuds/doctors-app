@@ -24,6 +24,8 @@ function Dashboard() {
           </Flex>
           <Menu />
         </Flex>
+
+        <Text fontSize="1.5rem">How can we be of help?</Text>
       </Box>
   );
 }

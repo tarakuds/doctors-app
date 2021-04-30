@@ -16,7 +16,7 @@ export function FormButton(props) {
   return (
     <Button
       fontSize="2rem"
-      w="70%"
+      w="85%"
       bgColor="#0fB1Ef"
       border="none"
       p="2%"
