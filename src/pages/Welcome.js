@@ -49,7 +49,7 @@ const Wrapper = styled.div`
   background-image: url(${bg});
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 812px;
   max-width: 500px;
   min-width: 325px;
   margin: 5px auto;
