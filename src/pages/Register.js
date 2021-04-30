@@ -12,7 +12,7 @@ function Register() {
   const onSubmit = data => console.log(data);
 
   return (
-    <Box w="500px" height="100vh" margin="5px auto" onSubmit={handleSubmit(onSubmit)}>
+    <Box minWidth="375px" maxWidth="500px" height="100%" margin="5px auto" onSubmit={handleSubmit(onSubmit)}>
       <Box textAlign="center">
         <Logo width="30%" />
       </Box>

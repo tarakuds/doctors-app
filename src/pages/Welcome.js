@@ -4,7 +4,7 @@ import styled from "styled-components";
 import bg from "../assets/bg.svg";
 import { ReactComponent as Heading } from "../assets/heading-welcome.svg";
 import LogoMa from "../assets/home-logo.svg";
-import {ReactComponent as LogoMain}  from "../assets/home-logo.svg"
+import { ReactComponent as LogoMain } from "../assets/home-logo.svg";
 import { ReactComponent as Arrow } from "../assets/arrow-back.svg";
 import { Box, Button, Text } from "@chakra-ui/react";
 
@@ -50,7 +50,8 @@ const Wrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  width: 500px;
+  max-width: 500px;
+  min-width: 325px;
   margin: 5px auto;
   padding-top: 3%;
 `;
