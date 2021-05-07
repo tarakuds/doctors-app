@@ -6,6 +6,8 @@ import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import Consultation from "./pages/Consultation";
+import Appointment from "./pages/Appointment";
 
 function App() {
   return (
@@ -23,24 +25,14 @@ function App() {
         <Route exact path="/dashboard">
           <Dashboard />
         </Route>
+        <Route exact path="/consultation">
+          <Consultation />
+        </Route>
+        <Route exact path="/appointment">
+          <Appointment />
+        </Route>
       </Switch>
     </Router>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
   );
 }
 

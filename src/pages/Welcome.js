@@ -7,13 +7,14 @@ import LogoMa from "../assets/home-logo.svg";
 import { ReactComponent as LogoMain } from "../assets/home-logo.svg";
 import { ReactComponent as Arrow } from "../assets/arrow-back.svg";
 import { Box, Button, Text } from "@chakra-ui/react";
+import {ReactComponent as LetsGo} from "../assets/letsGoBTN.svg"
 
 function Welcome() {
   return (
     <Wrapper>
-      <Header>
-        <Heading />
-      </Header>
+      <Box marginLeft="10%">
+      <Heading />
+      </Box>
       {/* <Logo>
         <LogoContent className="logo" src={LogoMa} alt="logo" />
       </Logo> */}
@@ -23,20 +24,9 @@ function Welcome() {
       </Box>
 
       <Link style={{ textDecoration: "none", cursor: "pointer" }} to="/login">
-        <Button
-          boxShadow="dark-lg"
-          px="5px"
-          py="5px"
-          borderRadius="20px"
-          border="none"
-          w="30%"
-          margin="auto 35%"
-        >
-          <Text marginRight="10%" fontSize="1.5rem" fontWeight="700">
-            Lets Go
-          </Text>
-          <Arrow />
-        </Button>
+        <Box margin="auto" w="40%">
+        <LetsGo />
+        </Box>
       </Link>
     </Wrapper>
   );
@@ -63,10 +53,6 @@ const Logo = styled.div`
   height: 35%;
   margin: 7% auto;
   padding: auto;
-`;
-const Header = styled.div`
-  margin: 0 10%;
-  width: 50%;
 `;
 const LogoContent = styled.img`
   margin: auto 5px;
