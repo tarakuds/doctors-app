@@ -1,15 +1,16 @@
 import { Input } from "@chakra-ui/react";
 import React from "react";
-import { useForm } from "react-hook-form";
 import PropTypes from "prop-types";
+import {useForm} from "react-hook-form"
 
-InputField.propTypes = {
+FormInput.propTypes = {
   placeholder: PropTypes.string,
+  type: PropTypes.string,
+  name: PropTypes.string,
 };
 
-function InputField(props) {
+function FormInput(props) {
   const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
   return (
     <Input
       borderColor="rgba(188, 188, 188, 0.3)"
@@ -19,11 +20,12 @@ function InputField(props) {
       borderRadius="50px"
       textAlign="center"
       margin="5px auto"
+      name={props.name}
       placeholder={props.placeholder}
-      register={register}
-      required
-    />
+      type={props.type}
+    {...register("password", { required: true })}
+   />
   );
 }
 
-export default InputField;
+export default FormInput;

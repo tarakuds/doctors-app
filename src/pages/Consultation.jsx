@@ -6,8 +6,8 @@ import { ReactComponent as BackArrow } from "../assets/arrow-back.svg";
 import Avatar from "../assets/avartar.png";
 import { Box, Text, Flex } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import styled from "styled-components"
-import Footer from "../components/Footer";
+import styled from "styled-components";
+import pageFooter from "../components/PageFooter";
 
 function Consultation() {
   return (
@@ -48,7 +48,7 @@ function Consultation() {
       </Flex>
       <Flex>
         <Box h="100px">
-        <img className="avatarImage" src={Avatar} alt="doctor image" />
+          <img className="avatarImage" src={Avatar} alt="doctor image" />
           {/* <Image>
          
           </Image> */}
@@ -62,7 +62,7 @@ function Consultation() {
       </Flex>
 
       <Box>
-        <Footer />
+        <pageFooter />
       </Box>
     </Box>
   );

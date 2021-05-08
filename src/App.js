@@ -8,6 +8,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Consultation from "./pages/Consultation";
 import Appointment from "./pages/Appointment";
+import PatientsDashboard from "./pages/PatientsDashboard";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route exact path="/appointment">
           <Appointment />
+        </Route>
+        <Route exact path="/patient">
+          <PatientsDashboard />
         </Route>
       </Switch>
     </Router>

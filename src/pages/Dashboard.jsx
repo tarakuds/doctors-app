@@ -9,7 +9,7 @@ import Tips from "../assets/icons/Tips.svg";
 import { Box, Text, Flex } from "@chakra-ui/react"
 import {Link} from "react-router-dom"
 import styled from "styled-components"
-import Footer from "../components/Footer";
+import pageFooter from "../components/PageFooter";
 
 function Dashboard() {
   return (
@@ -73,7 +73,7 @@ function Dashboard() {
       </Flex>
       
       <Box>
-        <Footer />
+        <pageFooter />
       </Box>
     </Box>
   );

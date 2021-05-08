@@ -4,7 +4,7 @@ import Logo from '../assets/icons/footer-logo.svg'
 import Search from '../assets/icons/Search.svg'
 import FAQ from '../assets/icons/FAQ.svg'
 
-function Footer() {
+function PageFooter() {
     return (
         <Flex justifyContent="space-around" my="5%">
             <img src={Logo} alt="logo"/>
@@ -14,4 +14,4 @@ function Footer() {
     )
 }
 
-export default Footer
+export default PageFooter

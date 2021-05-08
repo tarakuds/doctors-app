@@ -7,8 +7,9 @@ import Avatar from "../assets/avartar.png";
 import { Box, Text, Flex } from "@chakra-ui/react";
 //import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Footer from "../components/Footer";
-import InputField from "../components/Input";
+import actionButton from "../components/ClickButton";
+import pageFooter from "../components/PageFooter";
+import formInput from "../components/FormInput";
 
 function Appointment() {
   return (
@@ -55,8 +56,8 @@ function Appointment() {
           <Words>Female</Words>
         </Flex>
       </Flex>
-      <InputField placeholder="Patient Name" />
-      <InputField placeholder="Patient Address" />
+      <formInput placeholder="Patient Name" />
+      <formInput placeholder="Patient Address" />
       <Box display="flex" justifyContent="space-between"    >
       <Box width="50%">
         <Text>Height</Text>
@@ -101,8 +102,10 @@ function Appointment() {
         </Box>
       </Box>
       </Box>
+
+      <actionButton data="Book Appointment" />
       <Box>
-        <Footer />
+        <pageFooter />
       </Box>
     </Box>
   );

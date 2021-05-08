@@ -5,16 +5,17 @@ import PropTypes from "prop-types";
 function Buttons() {
   return <Button px="5px" borderRadius="15px" w="50px" h="40px" />;
 }
-FormButton.propTypes = {
-  data: PropTypes.string
+ClickButton.propTypes = {
+  value: PropTypes.string,
 };
 
-export function FormButton(props) {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = data => console.log(data);
+export function ClickButton(props) {
+  // const { register, handleSubmit } = useForm();
+  // const onSubmit = data => console.log(data);
   // const data = "Go"
   return (
     <Button
+      as="button"
       fontSize="2rem"
       w="85%"
       bgColor="#0fB1Ef"
@@ -27,9 +28,9 @@ export function FormButton(props) {
       fontWeight="700"
       type="submit"
     >
-       {props.data}
+      {props.value}
     </Button>
   );
 }
 
-export default Buttons;
+export default ClickButton;
