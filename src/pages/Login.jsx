@@ -67,7 +67,9 @@ function Login() {
 
         {/* <FormInput placeholder="Username / Email" {...register("email", { required: true })} />
         <FormInput placeholder="Password" type="password" {...register("password", { required: true })} /> */}
+        <Link style={{ textDecoration: "none", cursor: "pointer" }} to="/Dashboard">
         <ActionBTN value="Login" type="submit" />
+        </Link>
       </Box>
 
       <Box w="85%" margin="auto">

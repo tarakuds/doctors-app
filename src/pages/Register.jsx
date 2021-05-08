@@ -150,7 +150,7 @@ function Register() {
           required
         /> */}
 
-        <ActionBTN value="Submit" type="submit" />
+        <Link style={{ textDecoration: "none", cursor: "pointer" }} to="/login"><ActionBTN value="Submit" type="submit" /></Link>
         </Box>
 
         <Flex
